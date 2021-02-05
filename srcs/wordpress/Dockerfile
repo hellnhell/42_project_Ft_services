@@ -1,6 +1,7 @@
+
 FROM alpine:3.12
 
-MAINTAINER emartin <emartin-@student.42madrid.com>
+#MAINTAINER emartin <emartin-@student.42madrid.com>
 
 RUN  	apk update apk add wget php7 php7-fpm php7-mysqli php7-mbstring php7-json php7-session 
 
