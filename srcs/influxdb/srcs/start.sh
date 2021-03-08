@@ -1,4 +1,2 @@
-
 #!/bin/sh
-
-/etc/init.d/telegraf start & influxd
+/etc/init.d/telegraf start & influxd 
