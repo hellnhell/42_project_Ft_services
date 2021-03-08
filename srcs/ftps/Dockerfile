@@ -6,7 +6,7 @@
 #    By: emartin- <emartin-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/08 11:14:59 by emartin-          #+#    #+#              #
-#    Updated: 2021/03/08 14:26:36 by emartin-         ###   ########.fr        #
+#    Updated: 2021/03/08 14:44:10 by emartin-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,10 +25,9 @@ RUN     echo "user" >> /etc/vsftpd/vsftpd.userlist
 RUN     openssl req -x509 -out /etc/ssl/certs/vsftpd.crt -keyout /etc/ssl/private/vsftpd.key -newkey rsa:2048 -nodes -sha256 -subj '/CN=localhost'
 
 COPY	/srcs/telegraf.conf			/etc/telegraf/
-COPY	/srcs/vsftpd.conf			/etc/vsftpd⁄
 COPY	/srcs/start.sh				/
 
 
-EXPOSE	21 30001
+EXPOSE	20 21 31000
 
 ENTRYPOINT	sh start.sh
