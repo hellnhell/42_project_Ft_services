@@ -14,7 +14,7 @@
 		background-color: black;
 		/*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
 		text-align: center;
-		padding: 20%;
+		padding: 15%;
 		height: 100%;
 	}
 	h1 {
@@ -32,24 +32,18 @@
 		color: yellow;
 		padding-top: 3px;
 	}
-	.wp a{
-		font-size: 2rem;
-		color: yellow;
-	}
-	.wp-pass{
-		font-size: 1rem;
-		color: yellow;
-	}
-	.php{
+	.php a{
 		font-size: 2rem;
 		color:greenyellow;
+		padding: 2rem;
 	}
 	.php-pass p{
+		display: inline-flex;
 		font-size: 1rem;
 		color: yellow;
 	}
 	#services {
-		display: flex;
+		display: inline-flex;
 	}
 </style>
 </head>
@@ -57,14 +51,31 @@
 	<h1>Nginx</h1>
 	<h3>Web server is successfully installed and working!!</h3>
 	<div id="services">
-		<div class="wp">
-			<a href="http://192.168.99.124:5050/wordpress">Wordpress</a>
-		</div>
 		<div class="php">
-			<a href="http://192.168.99.128:5000">phpMyAdmin</a>
+			<a href="http://192.168.99.124:5050/wordpress">
+				<img src="https://media.giphy.com/media/d95OaRCFO5F5I2Bai0/giphy.gif">Wordpress
+			</a>
 			<div class="php-pass">
 				<p><em>user: root</em></p>
 				<p><em>password: toor</em></p><br/>
+			</div>
+		</div>
+		<div class="php">
+			<a href="http://192.168.99.124:5000">
+				<img src="https://media.giphy.com/media/d95OaRCFO5F5I2Bai0/giphy.gif">phpMyAdmin
+			</a>
+			<div class="php-pass">
+				<p><em>user: root</em></p>
+				<p><em>password: toor</em></p><br/>
+			</div>
+		</div>
+		<div class="php">
+			<a href="http://192.168.99.124:3000">
+				<img src="https://media.giphy.com/media/d95OaRCFO5F5I2Bai0/giphy.gif">Grafana
+			</a>
+			<div class="php-pass">
+				<p><em>user: admin</em></p>
+				<p><em>password: passwd</em></p><br/>
 			</div>
 		</div>
 	</div>

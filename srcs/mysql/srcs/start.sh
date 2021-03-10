@@ -11,7 +11,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-telegraf
+telegraf &
 mariadb-install-db -u root 
 mysqld -u root & sleep 5 #crea el socket
 
